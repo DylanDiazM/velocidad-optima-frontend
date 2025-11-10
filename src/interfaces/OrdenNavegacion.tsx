@@ -1,0 +1,17 @@
+export interface OrdenNavegacion {
+    id?: number,
+    fecha_hora: Date,
+    matricula: string,
+    embarcacion: string,
+    velocidad_optima: number,
+    velocidad_nominal: number,
+    gph: number,
+    rpm: number,
+    rpm_nominal: number,
+    usuario: string,
+    CODOR: string,
+    FECZR: string,
+    FECAR: string,
+    HORZR: string,
+    HORAR: string,
+}
