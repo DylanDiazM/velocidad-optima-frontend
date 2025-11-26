@@ -122,7 +122,7 @@ const VelocidadOptima = () => {
           <TableRow>
             <TableHead className="text-white">#</TableHead>
             <TableHead className="text-white">Embarcación</TableHead>
-            <TableHead className="text-white">Velocidad Óptima</TableHead>
+            <TableHead className="text-white">Velocidad Económica</TableHead>
             <TableHead className="text-white">Velocidad Nominal</TableHead>
             <TableHead className="text-white">GPH</TableHead>
             <TableHead className="text-white">RPM</TableHead>

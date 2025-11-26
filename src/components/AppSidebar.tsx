@@ -21,7 +21,7 @@ const items = [
     icon: PencilLine,
   },
   {
-    title: "Orden velocidad ótima",
+    title: "Orden velocidad económica",
     url: "/",
     icon: Book,
   },

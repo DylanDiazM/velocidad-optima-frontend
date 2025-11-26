@@ -123,7 +123,7 @@ const OrdenNavVelocidadOptima = () => {
           }
 
         } catch (error) {
-          console.error("Error al obtener la velocidad óptima:", error);
+          console.error("Error al obtener la velocidad económica:", error);
           // Limpiar valores en caso de error
           setVelocidadOptima(0);
           setGph(0);
@@ -229,7 +229,7 @@ const OrdenNavVelocidadOptima = () => {
 
   return (
     <div className="flex flex-col w-full p-4 mx-4 rounded-xl bg-white gap-8">
-      <h1 className="text-2xl font-bold mb-4">Registrar Velocidad Óptima</h1>
+      <h1 className="text-2xl font-bold mb-4">Registrar Velocidad Económica</h1>
       <div className="justify-start flex flex-wrap items-end w-full gap-4">
         <div>
           <Label>Embarcación</Label>
@@ -253,15 +253,15 @@ const OrdenNavVelocidadOptima = () => {
           </select>
         </div>
         <div>
-          <Label htmlFor="velocidad">Velocidad Óptima</Label>
+          <Label htmlFor="velocidad">Velocidad Económica</Label>
           <Input
             id="velocidad"
             type="number"
-            placeholder="Velocidad óptima"
+            placeholder="Velocidad económica"
             value={velocidadOptima}
             onChange={(e) => setVelocidadOptima(Number(e.target.value))}
             disabled
-            title={isLoadingData ? "Cargando..." : "Velocidad óptima"}
+            title={isLoadingData ? "Cargando..." : "Velocidad económica"}
           />
           {isLoadingData && <small className="text-gray-500">Cargando datos...</small>}
         </div>
@@ -324,7 +324,7 @@ const OrdenNavVelocidadOptima = () => {
             <AlertCircle className="h-4 w-4" />
             <AlertTitle>REGISTRADOS</AlertTitle>
             <AlertDescription className="text-green-500">
-              Se ha registrado correctamente la velocidad óptima a la embarcación seleccionada.
+              Se ha registrado correctamente la velocidad económica a la embarcación seleccionada.
             </AlertDescription>
           </Alert>
         )}
@@ -383,7 +383,7 @@ const OrdenNavVelocidadOptima = () => {
           <TableRow>
             <TableHead className="text-white">#</TableHead>
             <TableHead className="text-white">Embarcación</TableHead>
-            <TableHead className="text-white">Velocidad Óptima</TableHead>
+            <TableHead className="text-white">Velocidad Económica</TableHead>
             <TableHead className="text-white">Fecha y Hora</TableHead>
             <TableHead className="text-white">Acciones</TableHead>
           </TableRow>
