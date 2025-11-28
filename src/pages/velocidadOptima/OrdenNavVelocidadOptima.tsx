@@ -383,8 +383,8 @@ const OrdenNavVelocidadOptima = () => {
           <TableRow>
             <TableHead className="text-white">#</TableHead>
             <TableHead className="text-white">Embarcación</TableHead>
-            <TableHead className="text-white">Velocidad Económica</TableHead>
-            <TableHead className="text-white">Fecha y Hora</TableHead>
+            <TableHead className="text-white text-center">Velocidad Económica</TableHead>
+            <TableHead className="text-white text-center">Fecha y Hora</TableHead>
             <TableHead className="text-white">Acciones</TableHead>
           </TableRow>
         </TableHeader>
@@ -393,8 +393,8 @@ const OrdenNavVelocidadOptima = () => {
             <TableRow key={registro.id}>
               <TableCell>{(currentPage - 1) * PAGE_SIZE + index + 1}</TableCell>
               <TableCell>{registro.embarcacion}</TableCell>
-              <TableCell>{registro.velocidad_optima}</TableCell>
-              <TableCell>
+              <TableCell className="text-center">{registro.velocidad_optima}</TableCell>
+              <TableCell className="text-center">
                 {new Date(registro.fecha_hora).toLocaleString('es-CL', {
                   day: '2-digit',
                   month: '2-digit',

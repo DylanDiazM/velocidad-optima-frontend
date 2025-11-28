@@ -118,15 +118,15 @@ const VelocidadOptima = () => {
       )}
 
       <Table>
-        <TableHeader className="bg-[#043f80]">
+        <TableHeader className="bg-[#043f80] text-center">
           <TableRow>
-            <TableHead className="text-white">#</TableHead>
-            <TableHead className="text-white">Embarcación</TableHead>
-            <TableHead className="text-white">Velocidad Económica</TableHead>
-            <TableHead className="text-white">Velocidad Nominal</TableHead>
-            <TableHead className="text-white">GPH</TableHead>
-            <TableHead className="text-white">RPM</TableHead>
-            <TableHead className="text-white">RPM Nominal</TableHead>
+            <TableHead className="text-white text-center">#</TableHead>
+            <TableHead className="text-white text-center">Embarcación</TableHead>
+            <TableHead className="text-white text-center">Velocidad Económica</TableHead>
+            <TableHead className="text-white text-center">Velocidad Nominal</TableHead>
+            <TableHead className="text-white text-center">GPH</TableHead>
+            <TableHead className="text-white text-center">RPM</TableHead>
+            <TableHead className="text-white text-center">RPM Nominal</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -135,65 +135,65 @@ const VelocidadOptima = () => {
               <TableCell>{index + 1}</TableCell>
               <TableCell>{embarcacion.embarcacion}</TableCell>
 
-              <TableCell>
+              <TableCell className="text-center">
                 {isEditing ? (
                   <input
                     type="number"
                     value={embarcacion.velocidad_optima}
                     onChange={(e) => handleChange(index, "velocidad_optima", e.target.value)}
-                    className="border px-2 py-1 rounded w-24"
+                    className="border px-2 py-1 rounded w-24 text-center"
                   />
                 ) : (
                   embarcacion.velocidad_optima
                 )}
               </TableCell>
 
-              <TableCell>
+              <TableCell className="text-center">
                 {isEditing ? (
                   <input
                     type="number"
                     value={embarcacion.velocidad_nominal}
                     onChange={(e) => handleChange(index, "velocidad_nominal", e.target.value)}
-                    className="border px-2 py-1 rounded w-24"
+                    className="border px-2 py-1 rounded w-24 text-center"
                   />
                 ) : (
                   embarcacion.velocidad_nominal
                 )}
               </TableCell>
 
-              <TableCell>
+              <TableCell className="text-center">
                 {isEditing ? (
                   <input
                     type="number"
                     value={embarcacion.gph}
                     onChange={(e) => handleChange(index, "gph", e.target.value)}
-                    className="border px-2 py-1 rounded w-24"
+                    className="border px-2 py-1 rounded w-24 text-center"
                   />
                 ) : (
                   embarcacion.gph
                 )}
               </TableCell>
 
-              <TableCell>
+              <TableCell className="text-center">
                 {isEditing ? (
                   <input
                     type="number"
                     value={embarcacion.rpm}
                     onChange={(e) => handleChange(index, "rpm", e.target.value)}
-                    className="border px-2 py-1 rounded w-24"
+                    className="border px-2 py-1 rounded w-24 text-center"
                   />
                 ) : (
                   embarcacion.rpm
                 )}
               </TableCell>
 
-              <TableCell>
+              <TableCell className="text-center">
                 {isEditing ? (
                   <input
                     type="number"
                     value={embarcacion.rpm_nominal}
                     onChange={(e) => handleChange(index, "rpm_nominal", e.target.value)}
-                    className="border px-2 py-1 rounded w-24"
+                    className="border px-2 py-1 rounded w-24 text-center"
                   />
                 ) : (
                   embarcacion.rpm_nominal
